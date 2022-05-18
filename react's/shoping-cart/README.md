@@ -1,3 +1,11 @@
+### project shopping cart 
+ # useing useContext and useReducer hook 
+
+
+
+vedio reference by "rode side coder " (https://www.youtube.com/watch?v=HptuMAUaNGk&t)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

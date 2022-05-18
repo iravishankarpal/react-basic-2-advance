@@ -8,8 +8,8 @@ import './App.css';
 function ReducerFunction() {
 
   const functionReducer =(state,action)=>{
-  console.info('action before manuplation :', action);
-  console.info('state befre manuplation:', state);
+  // console.info('action before manuplation :', action);
+  // console.info('state befre manuplation:', state);
     
     if(action.type ==="Add_count"){
         return {count : state.count + 1}
