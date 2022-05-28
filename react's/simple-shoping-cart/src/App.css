@@ -1,0 +1,87 @@
+*{
+  margin:  0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.navbar{
+  display: flex;
+  justify-content:  space-around;
+  height: 50px;
+  align-items: center;
+  font-size: 20px;
+  background-color:  aliceblue;
+
+}
+.navbar *{
+   text-decoration: none;
+}
+.cart-count{
+   font-size: 15px;
+   background-color: green;
+   padding: 3px;
+   color:white;
+   border-radius: 9px;
+   position: relative;
+   top: -9px
+}
+.card {
+  border: 6px solid wheat;
+  background-color: whitesmoke;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+ 
+}
+.card-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.card-image{
+  align-self: center;
+}
+.card *{
+  padding: 1px;
+}
+
+  .Btn-addToCart{
+    background-color: green;
+    padding: 9px;
+    color: white;
+    border: none;
+  }
+  .Btn-RmToCart{
+    background-color: red;
+    padding: 9px;
+    color: white;
+    border: none;
+  }
+.cart{
+  display: flex;
+  flex-direction:row ;
+  flex-wrap: wrap;
+}
+.cart .cart-image img{
+  width: 69px;
+  height: auto;
+
+
+}
+
+.cart-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px;
+  background-color: whitesmoke;
+  margin: 12px;
+}
+
+
+.price , payment{
+  font-size: 20px;
+  font-weight: bold;
+  color: green;
+}
