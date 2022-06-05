@@ -3,7 +3,6 @@ import React, { useContext } from "react";
 import { FaRupeeSign } from "react-icons/fa";
 // import axios from "axios";
 import "./style.css";
-import { Button } from "react-bootstrap";
 
 import styled from "styled-components";
 import { CartStore } from "./Context-Reducer/Context";
@@ -18,12 +17,12 @@ const ProductDetailRating = styled.div`
 `;
 
 function ProductDetail() {
-  const {cart,detail,setCart} = useContext(CartStore);
-  console.log('detail product detial page :', detail);
+  const {detail} = useContext(CartStore);
+
   
   const ProductDetail = detail[0]
-  // const {ProductDetail} = useParams()
-  // console.log('ProductDetail :', ProductDetail);
+
+  console.log('ProductDetail :', ProductDetail);
 
   return (
     <div className="ProductDeatilsContainer row ">

@@ -8,7 +8,7 @@ import axios from "axios";
 import CheckToCart from "./CheckToCart";
 function CartDetail() {
   
-  const {cart, setCart ,detail, setDetail} = useContext(CartStore);
+  const {detail, setDetail} = useContext(CartStore);
   
   const [AllProduct, setAllProduct] = useState([]);
 
@@ -23,10 +23,10 @@ function CartDetail() {
     if (AllProduct.length===0) {
       FetchProductDeatil();
     } else {
-      FetchProductDeatil();   
+        
     }
 
-  },[]);
+  },[AllProduct]);
   if (AllProduct.length===0) {
     return(
       <div className="loading">
@@ -65,10 +65,10 @@ function CartDetail() {
                   src={Prod.image}
                 />
                 <Card.Body>
-                  <div>
+                  <h3>
                     {" "}
                     <FaRupeeSign /> {Prod.price}
-                  </div>
+                  </h3>
                   <Card.Title>{Prod.title}</Card.Title>
   
                   <Card.Text>
