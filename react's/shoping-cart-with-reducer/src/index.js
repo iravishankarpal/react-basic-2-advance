@@ -1,15 +1,13 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import Context from "./component/Context-Reducer/Context";
 
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-import Context from './component/Context-Reducer/Context';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Context>
-
-    <App />
+      <App />
     </Context>
   </React.StrictMode>
 );
